@@ -1,0 +1,245 @@
+* {
+    margin: 0px;
+    padding: 0x;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.itemHeader {
+    text-decoration: none;
+    color: #F3F3F3;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.headerMenuCarrito {
+    display: flex;
+    gap: 46px;
+    display: none;
+}
+
+.slide {
+    background-image: url(../img/fondo.png);
+    height: 512px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.texto1Slide,
+.texto2Slide {
+    color: #D01418;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.texto2Slide {
+    color: #F3F3F3;
+}
+
+.textoSlide {
+    width: 85%;
+    text-align: center;
+}
+
+.botonComprar {
+    background-color: #D01418;
+    color: #F3F3F3;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    width: 220px;
+    height: 61px;
+}
+
+.productos {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    padding-bottom: 85px;
+    padding-top: 20px;
+}
+
+.textoProductos {
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.card {
+    width: 240px;
+    height: 322px;
+    border-radius: 5px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+hr {
+    width: 100%;
+}
+
+.precioDestacados {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.promocionDestacados {
+    color: #000;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.envioDestacados {
+    color: #619D00;
+    font-size: 0.65rem;
+    font-weight: 400;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.imEstrellas {
+    position: relative;
+}
+
+.textoEstrellas {
+    position: absolute;
+    top: 45px;
+    left: 173px;
+    color: #F3F3F3;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.productosEstrellas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.estrellas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+.logoFooter {
+    width: 200px;
+}
+
+.textoFooter {
+    color: #F3F3F3;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menuFooter ul,
+.menuHeader ul {
+    display: flex;
+    gap: 41px;
+    padding: 0px;
+
+}
+
+.derechosFooter {
+    background-color: #C4C4C4;
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    height: 25px;
+    padding-top: 7px;
+}
+
+@media(min-width:601px) {
+
+    .imVectormenu {
+        display: none;
+    }
+
+    .headerMenuCarrito {
+        display: flex;
+    }
+
+    .slide {
+        background-image: url("../img/fondo2.png");
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .productosEstrellas {
+        flex-direction: row;
+        gap: 114px;
+
+    }
+
+    .imEstrellas {
+        width: 360px;
+        font-size: 25px;
+    }
+
+    .imgEstrella {
+        width: 100%;
+    }
+
+    .textoEstrellas {
+        font-size: 25px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
